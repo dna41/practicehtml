@@ -1,1 +1,35 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Practice HTML</h1>
+
+<canvas id="myCanvas" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+// Create a canvas
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+  ctx.fillstyle = 'blue'
+// Define a new path
+ctx.beginPath();
+
+// Set start-point
+ctx.moveTo(20,20);
+
+// Set sub-points
+ctx.lineTo(100,20);
+ctx.lineTo(175,100);
+ctx.lineTo(20,100);
+
+// Set end-point
+ctx.lineTo(20,20);
+
+// Draw it
+ctx.stroke();
+</script>
+
+</body>
+</html>
